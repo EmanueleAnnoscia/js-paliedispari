@@ -13,19 +13,20 @@
 // deve restituire valaore booleano
 
 
-const userWord = prompt("scrivi qui la tua parola")
+const userWord = prompt("scrivi qui la tua parola");
 
 function palindroma(parolaToCheck){
-  for(let i=0; i<parolaToCheck; i++)
-  if (parolaToCheck[0] === parolaToCheck[parolaToCheck.length-1]){
-    let counterCheck= parolaToCheck[0] + 1 && parolaToCheck[parolaToCheck.length - 1] -1;
-    
-  }else if{
-    console.log("la parola è palindroma")
-    
-  }else{
-    console.log("la parola non è palindroma")
+  let j= parolaToCheck.length - 1;
+
+  for(let i=0; i<parolaToCheck.length/2; i++){
+    if (parolaToCheck[i] === parolaToCheck[j]){
+      j--;
+      console.log("la parola è palindroma")
+    }else{
+      console.log("la parola non è palindroma");
+    }
   }
+  
 }
 
 const finalCheck = palindroma(userWord);
