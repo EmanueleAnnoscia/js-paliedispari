@@ -2,17 +2,33 @@
 // Creare una funzione per capire se la parola inserita è palindroma
 // NON USARE SPLIT E REVERSE!!! TUTTO CON CICLO FOR
 
-passaggi
-dati 
-richiesta della parola all'utente
-creare una funzione di controllo che ne verifica la caratteristica di palindromità
+// passaggi
+// dati 
+// richiesta della parola all'utente
+// creare una funzione di controllo che ne verifica la caratteristica di palindromità
 
-creazione funzione
-nome: palindroma
+// creazione funzione
+// nome: palindroma
+// parametri richiesti: la parola
+// deve restituire valaore booleano
 
 
+const userWord = prompt("scrivi qui la tua parola")
 
+function palindroma(parolaToCheck){
+  for(let i=0; i<parolaToCheck; i++)
+  if (parolaToCheck[0] === parolaToCheck[parolaToCheck.length-1]){
+    let counterCheck= parolaToCheck[0] + 1 && parolaToCheck[parolaToCheck.length - 1] -1;
+    
+  }else if{
+    console.log("la parola è palindroma")
+    
+  }else{
+    console.log("la parola non è palindroma")
+  }
+}
 
+const finalCheck = palindroma(userWord);
 
 
 
@@ -25,36 +41,36 @@ nome: palindroma
 // Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 // Dichiariamo chi ha vinto.
 
-const numeroScelto = prompt("scegli un numero da 1 a 5");
-const numeroSceltoNum = parseInt(numeroScelto)
-console.log(numeroSceltoNum)
+// const numeroScelto = prompt("scegli un numero da 1 a 5");
+// const numeroSceltoNum = parseInt(numeroScelto)
+// console.log(numeroSceltoNum)
 
-function rndNumber() {
-    const  random = Math.floor(Math.random() * 5) + 1;
-    return random;
-  }
+// function rndNumber() {
+//     const  random = Math.floor(Math.random() * 5) + 1;
+//     return random;
+//   }
 
-const computerNum = rndNumber();
-console.log(computerNum)
+// const computerNum = rndNumber();
+// console.log(computerNum)
 
-const somma = numeroSceltoNum + computerNum;
-console.log(somma)
+// const somma = numeroSceltoNum + computerNum;
+// console.log(somma)
 
 
-function isEven(numberToCheck) {
+// function isEven(numberToCheck) {
   
-    let even;
-    if (numberToCheck % 2 === 0) {
-      even = true;
-    } else {
-      even = false;
-    }
+//     let even;
+//     if (numberToCheck % 2 === 0) {
+//       even = true;
+//     } else {
+//       even = false;
+//     }
   
-    return even;
-  }
+//     return even;
+//   }
 
-  const risultatoFinale = isEven(somma);
-  console.log(risultatoFinale)
+//   const risultatoFinale = isEven(somma);
+//   console.log(risultatoFinale)
 
 
 
