@@ -2,6 +2,16 @@
 // Creare una funzione per capire se la parola inserita è palindroma
 // NON USARE SPLIT E REVERSE!!! TUTTO CON CICLO FOR
 
+passaggi
+dati 
+richiesta della parola all'utente
+creare una funzione di controllo che ne verifica la caratteristica di palindromità
+
+creazione funzione
+nome: palindroma
+
+
+
 
 
 
@@ -15,11 +25,36 @@
 // Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 // Dichiariamo chi ha vinto.
 
+const numeroScelto = prompt("scegli un numero da 1 a 5");
+const numeroSceltoNum = parseInt(numeroScelto)
+console.log(numeroSceltoNum)
+
+function rndNumber() {
+    const  random = Math.floor(Math.random() * 5) + 1;
+    return random;
+  }
+
+const computerNum = rndNumber();
+console.log(computerNum)
+
+const somma = numeroSceltoNum + computerNum;
+console.log(somma)
 
 
+function isEven(numberToCheck) {
+  
+    let even;
+    if (numberToCheck % 2 === 0) {
+      even = true;
+    } else {
+      even = false;
+    }
+  
+    return even;
+  }
 
-
-
+  const risultatoFinale = isEven(somma);
+  console.log(risultatoFinale)
 
 
 
