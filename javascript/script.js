@@ -17,14 +17,18 @@ const userWord = prompt("scrivi qui la tua parola");
 
 function palindroma(parolaToCheck){
   let j= parolaToCheck.length - 1;
-
-  for(let i=0; i<parolaToCheck.length/2; i++){
+  let i= 0;
+  for(i=0; i<parolaToCheck.length/2; i++){
+    j--;
+    
     if (parolaToCheck[i] === parolaToCheck[j]){
-      j--;
       console.log("la parola è palindroma")
+      return true;
     }else{
       console.log("la parola non è palindroma");
+      return false;
     }
+    
   }
   
 }
