@@ -16,20 +16,21 @@
 const userWord = prompt("scrivi qui la tua parola");
 
 function palindroma(parolaToCheck){
+  parolaToCheck = parolaToCheck.toLowerCase();
   let j= parolaToCheck.length - 1;
   let i= 0;
   for(i=0; i<parolaToCheck.length/2; i++){
-    j--;
+    // console.log(parolaToCheck[i]);
+    // console.log(parolaToCheck[j]);
     
-    if (parolaToCheck[i] === parolaToCheck[j]){
-      console.log("la parola è palindroma")
-      return true;
-    }else{
-      console.log("la parola non è palindroma");
+    if (parolaToCheck[i] !== parolaToCheck[j]){
+      console.log("la parola non è palindroma")
       return false;
     }
-    
+      j--;
   }
+  console.log("la parola è palindroma");
+  return true;
   
 }
 
